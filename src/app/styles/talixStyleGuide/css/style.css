@@ -1,0 +1,438 @@
+.dark-gray {
+  background-color: #ebebeb
+}
+
+.light-gray {
+  background-color: #f8f8f8
+}
+
+.black {
+  background: #3f3e3e
+}
+
+.blue {
+  background-color: #003D4C
+}
+
+.green {
+  background-color: #62a70f
+}
+
+.grey {
+  background-color: #54575a
+}
+
+.purple {
+  background-color: #8332a7
+}
+
+.black {
+  background-color: #231f20
+}
+
+.red {
+  background-color: #CE0058
+}
+
+.text-green {
+  color: #62a70f
+}
+
+.text-grey {
+  color: #54575a
+}
+
+.text-purple {
+  color: #8332a7
+}
+
+.text-blue {
+  color: #003D4C
+}
+
+.text-black {
+  color: #231f20
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(//fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCD5K6T8I4oZ1X3Xvlj_UeP3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U +0102 -0103, U +1 EA0-1EF1, U +20 AB
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(//fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGDOFnJNygIkrHciC8BWzbCz3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U +0100 -024 F, U +1 E00-1EFF, U +20 A0-20AB, U +20 AD-20CF, U +2 C60-2C7F, U + A720-A7FF
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(//fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCP2LEk6lMzYsRqr3dHFImA.woff2) format('woff2');
+  unicode-range: U +0000 -00 FF, U +0131, U +0152 -0153, U +02 C6, U +02 DA, U +02 DC, U +2000 -206 F, U +2074, U +20 AC, U +2212, U +2215, U + E0FF, U + EFFD, U + F000
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(//fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlCxe5Tewm2_XWfbGchcXw4g.woff2) format('woff2');
+  unicode-range: U +0102 -0103, U +1 EA0-1EF1, U +20 AB
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(//fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlIa1YDtoarzwSXxTHggEXMw.woff2) format('woff2');
+  unicode-range: U +0100 -024 F, U +1 E00-1EFF, U +20 A0-20AB, U +20 AD-20CF, U +2 C60-2C7F, U + A720-A7FF
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(//fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2) format('woff2');
+  unicode-range: U +0000 -00 FF, U +0131, U +0152 -0153, U +02 C6, U +02 DA, U +02 DC, U +2000 -206 F, U +2074, U +20 AC, U +2212, U +2215, U + E0FF, U + EFFD, U + F000
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(//fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMZXFz2iDKd7GJNSaxRYiSj3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U +0102 -0103, U +1 EA0-1EF1, U +20 AB
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(//fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGKyGJhAh-RE0BxGcd_izyev3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U +0100 -024 F, U +1 E00-1EFF, U +20 A0-20AB, U +20 AD-20CF, U +2 C60-2C7F, U + A720-A7FF
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(//fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMzFoXZ-Kj537nB_-9jJhlA.woff2) format('woff2');
+  unicode-range: U +0000 -00 FF, U +0131, U +0152 -0153, U +02 C6, U +02 DA, U +02 DC, U +2000 -206 F, U +2074, U +20 AC, U +2212, U +2215, U + E0FF, U + EFFD, U + F000
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(//fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMms7UHsIbjUxEJqIwog-i_3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U +0102 -0103, U +1 EA0-1EF1, U +20 AB
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(//fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGO4s1Ux4PuImWPk5fSr6HPL3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U +0100 -024 F, U +1 E00-1EFF, U +20 A0-20AB, U +20 AD-20CF, U +2 C60-2C7F, U + A720-A7FF
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(//fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format('woff2');
+  unicode-range: U +0000 -00 FF, U +0131, U +0152 -0153, U +02 C6, U +02 DA, U +02 DC, U +2000 -206 F, U +2074, U +20 AC, U +2212, U +2215, U + E0FF, U + EFFD, U + F000
+}
+
+html {
+  font-size: 100.01%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: sans-serif
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.43;
+  color: #54575a
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  text-rendering: optimizeLegibility
+}
+
+.btn, .btn-small {
+  padding: 8px 18px 6px;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -o-user-select: none
+}
+
+button, html, input, select, textarea {
+  line-height: inherit
+}
+
+h1 {
+  font-size: 3em
+}
+
+a {
+  text-decoration: none
+}
+
+.testing {
+  color: #003D4C
+}
+
+button:focus {
+  outline: 0
+}
+
+.btn {
+  background: #003D4C;
+  color: #fff;
+  border: none;
+  min-width: 100px;
+  font-size: .8rem;
+  display: inline-block;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 130px;
+  border-radius: 2px;
+  -webkit-transition: all .23s ease-in-out 0s;
+  -moz-transition: all .23s ease-in-out 0s;
+  transition: all .23s ease-in-out 0s
+}
+
+.btn-green, .btn-small {
+  -webkit-transition: all .23s ease-in-out 0s;
+  -moz-transition: all .23s ease-in-out 0s
+}
+
+.btn:focus, .btn:hover {
+  background: #007a99;
+  color: #fff;
+  border: none
+}
+
+.btn:active, .btn:focus {
+  outline: 0;
+  border: none
+}
+
+.btn-small {
+  min-width: 50px;
+  border: none;
+  width: 100px;
+  background: #003D4C;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  border-radius: 4px;
+  transition: all .23s ease-in-out 0s
+}
+
+.btn-green, .btn-purple {
+  padding: 8px 18px 6px;
+  width: 130px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  color: #fff
+}
+
+.btn-small:focus, .btn-small:hover {
+  background: #007a99;
+  color: #fff;
+  border: none
+}
+
+.btn-small:active, .btn-small:focus {
+  outline: 0;
+  border: none
+}
+
+.btn-purple {
+  border: none;
+  background: #8332a7;
+  user-select: none;
+  border-radius: 4px
+}
+
+.btn-purple:focus, .btn-purple:hover {
+  background: #9b3dc5
+}
+
+.btn-purple:active, .btn-purple:focus {
+  outline: 0;
+  border: none
+}
+
+.btn-green {
+  border: none;
+  background: #62a70f;
+  user-select: none;
+  border-radius: 4px;
+  transition: all .23s ease-in-out 0s
+}
+
+.btn-blue, .btn-red {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-transition: all .23s ease-in-out 0s;
+  -moz-transition: all .23s ease-in-out 0s;
+  padding: 8px 18px 6px;
+  width: 130px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff
+}
+
+.btn-green:focus, .btn-green:hover {
+  background: #7dd613
+}
+
+.btn-green:active, .btn-green:focus {
+  outline: 0;
+  border: none
+}
+
+.btn-blue {
+  border: none;
+  background: #003D4C;
+  user-select: none;
+  border-radius: 4px;
+  transition: all .23s ease-in-out 0s
+}
+
+.btn-blue:focus, .btn-blue:hover {
+  background: #007a99
+}
+
+.btn-blue:active, .btn-blue:focus {
+  outline: 0;
+  border: none
+}
+
+.btn-red {
+  border: none;
+  background: #CE0058;
+  user-select: none;
+  border-radius: 4px;
+  transition: all .23s ease-in-out 0s
+}
+
+.btn-red:focus, .btn-red:hover {
+  background: #ff026e
+}
+
+.btn-red:active, .btn-red:focus {
+  outline: 0;
+  border: none
+}
+
+.btn-grey {
+  padding: 8px 18px 6px;
+  width: 130px;
+  border: none;
+  background: #54575a;
+  border-radius: 4px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #fff;
+  -webkit-transition: all .23s ease-in-out 0s;
+  -moz-transition: all .23s ease-in-out 0s;
+  transition: all .23s ease-in-out 0s
+}
+
+.btn-grey:focus, .btn-grey:hover {
+  background: #797d82
+}
+
+.btn-grey:active, .btn-grey:focus {
+  outline: 0;
+  border: none
+}
+
+.btn-large {
+  font-size: 15px;
+  padding: 11px 30px 9px;
+  min-width: 156px
+}
+
+.btn-cancel:before {
+  content: 'x';
+  text-align: left;
+  margin-right: .3rem;
+  font-weight: 700
+}
+
+.btn-x-large {
+  font-size: 16px;
+  min-width: 230px;
+  font-weight: 700;
+  padding: 13px 30px 11px
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0
+}
+
+select {
+  height: 2.3125rem;
+  padding: .5rem;
+  font-size: .875rem;
+  border-radius: 0;
+  width: 90%;
+  margin: 0 0 1rem;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  background: #fcfdfe;
+  background: -moz-linear-gradient(top, #fcfdfe 0, #f8f9fa 29%, #f0f4f6 72%, #f8fcfe 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fcfdfe), color-stop(29%, #f8f9fa), color-stop(72%, #f0f4f6), color-stop(100%, #f8fcfe));
+  background: -webkit-linear-gradient(top, #fcfdfe 0, #f8f9fa 29%, #f0f4f6 72%, #f8fcfe 100%);
+  background: linear-gradient(to bottom, #fcfdfe 0, #f8f9fa 29%, #f0f4f6 72%, #f8fcfe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfdfe', endColorstr='#f8fcfe', GradientType=0);
+  border: 1px solid #a0a0a0
+}

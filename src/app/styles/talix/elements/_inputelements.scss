@@ -1,0 +1,19 @@
+select {
+  background-color: #FAFAFA;
+  height: 2.3125rem;
+  font-size: .875rem;
+  border-radius: 0;
+  width: 90%;
+  margin: 0 0 1rem;
+  color: #000;
+  letter-spacing: .05rem;
+  background: #fcfdfe;
+  background: -moz-linear-gradient(top, #fcfdfe 0, #f8f9fa 29%, #f0f4f6 72%, #f8fcfe 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fcfdfe), color-stop(29%, #f8f9fa), color-stop(72%, #f0f4f6), color-stop(100%, #f8fcfe));
+  background: -webkit-linear-gradient(top, #fcfdfe 0, #f8f9fa 29%, #f0f4f6 72%, #f8fcfe 100%);
+  background: -o-linear-gradient(top, #fcfdfe 0, #f8f9fa 29%, #f0f4f6 72%, #f8fcfe 100%);
+  background: -ms-linear-gradient(top, #fcfdfe 0, #f8f9fa 29%, #f0f4f6 72%, #f8fcfe 100%);
+  background: linear-gradient(to bottom, #fcfdfe 0, #f8f9fa 29%, #f0f4f6 72%, #f8fcfe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfdfe', endColorstr='#f8fcfe', GradientType=0);
+  border: 1px solid #a0a0a0;
+}

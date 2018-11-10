@@ -1,0 +1,49 @@
+.hl-hcc-login-logo {
+  background-image: url(/hcc/branding/nua/images/nuance.logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hl-readmit-menu-logoright {
+  background-image: url(/hcc/branding/nua/images/talix-logos_large.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#hlHccInfoLookup {
+  display: block !important;
+}
+
+.tlx .header .logo {
+  margin-left: 17px!important;
+  background-image: url(/hcc/branding/nua/images/nuance_quality_and_risk_adjustment_padded.png)!important;
+  width: 132px!important;
+  margin-top: -5px;
+}
+
+.tlx .header .logo-client {
+  background-image: url(/hcc/branding/nua/images/talix_power_by_small.png)!important;
+  height: 25px!important;
+  top: 24px!important;
+}
+
+/* PDP */
+.tlx .header-nav-bar .logo-left,
+.tlx .header .logo {
+  margin-left: 17px!important;
+  background-image: url(/hcc/branding/nua/images/nuance_quality_and_risk_adjustment_padded.png)!important;
+  width: 132px!important;
+  background-repeat: no-repeat;
+  top: 3px!important;
+  height: 41px!important;
+}
+
+.tlx .header-nav-bar .back-icon-container {
+  top: 0!important;
+}
+
+.tlx .header-nav-bar .hl-readmit-menu-logoright {
+  background-image: url(/hcc/branding/nua/images/talix_power_by_small.png)!important;
+  height: 25px!important;
+}
+/* End PDP */

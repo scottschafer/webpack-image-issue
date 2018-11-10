@@ -1,0 +1,26 @@
+.hl-hcc-login-logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -154px;
+  top: 0px;
+  background-image: url(/hcc/branding/nua/images/nuance.logo.png);
+  width: 300px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.passwordReset .login-logo,
+.nua .passwordReset .login-logo  {
+  background-image: url(/hcc/branding/nua/images/nuance.logo.png)!important;
+}
+
+.nua .hl-hcc-login-bottomright, .hl-hcc-login-bottomright {
+  background-image: url(/hcc/branding/nua/images/talix_power_by_small.png)!important;
+  height: 25px!important;
+}
+
+.hl-readmit-menu-logo {
+  background-image: url(/hcc/branding/nua/images/nuance_quality_and_risk_adjustment_padded.png)!important;
+  top: 2px!important;
+}

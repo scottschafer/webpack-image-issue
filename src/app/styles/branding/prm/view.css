@@ -1,0 +1,15 @@
+.hl-hcc-login-logo {
+  background-image: url(/assets/images/talix-logos_large.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hl-readmit-menu-logoright {
+  background-image: url(/assets/images/talix-logos_large.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#hlHccInfoLookup {
+  display: block !important;
+}

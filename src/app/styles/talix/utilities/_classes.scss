@@ -1,0 +1,721 @@
+/* ==========================================================================
+  Classes
+========================================================================== */
+
+/**** **** **** **** ****
+  Decoration
+**** **** **** **** ****/
+
+.outline {
+  border: 1px solid #ddd;
+  padding: 50px 0;
+  @include clearfix();
+
+  &.pad--0 {
+    padding: 0;
+  }
+
+  &.pad--30 {
+    padding: 30px;
+  }
+
+  @include breakpoint(small) {
+    padding: 5px;
+    &.pad--0 {
+      padding: 0;
+    }
+  }
+}
+
+.outline-thick {
+  border: 2px solid #ddd;
+  padding: 30px 0;
+}
+
+.circle {
+  border-radius: 100%;
+  overflow: hidden;
+  &.set {
+    width: 220px;
+    height: 220px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e3e3e3;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.border-right {
+  border-right: 1px solid #959595;
+}
+
+.border-left {
+  border-left: 1px solid #959595;
+}
+
+.border-inline-dotted {
+  position: relative;
+  &:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px dashed $blue;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -2px;
+    z-index: 1;
+  }
+}
+
+/**** **** **** **** ****
+  Backgrounds
+**** **** **** **** ****/
+
+.dark-gray {
+  background-color: #ebebeb;
+}
+
+.light-gray {
+  background-color: #f8f8f8;
+}
+
+.black {
+  background: #3f3e3e;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.green {
+  background-color: $green;
+}
+
+.grey {
+  background-color: $grey;
+}
+
+.purple {
+  background-color: $purple;
+}
+
+.black {
+  background-color: $black;
+}
+
+.red {
+  background-color: $red;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-grey {
+  color: $grey;
+}
+
+.text-purple {
+  color: $purple;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-black {
+  color: $black;
+}
+
+.brown {
+  background-color: #88776D;
+  color: #fff;
+  h3 {
+    color: #fff;
+  }
+}
+
+.light-brown {
+  background-color: #b1a6a0;
+  color: #fff;
+  h4 {
+    color: #fff;
+  }
+}
+
+.white {
+  background-color: #fff;
+  h3, h4 {
+    color: #333;
+  }
+  .text-red {
+    color: $red;
+  }
+  color: #333;
+  &.border-bottom {
+    border-bottom: 8px solid #666;
+  }
+}
+
+.gradient-ltr {
+  background: linear-gradient(top left, #f4f4f4, #fff);
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(top left, #ccc, #fff);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  @include breakpoint(medium) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &.pad-b--0 {
+      padding-bottom: 0;
+    }
+  }
+
+  .no-generatedcontent &,
+  .lt-ie10 & {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.gradient-border-ltr {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(top left, #ccc, #fff);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  @include breakpoint(medium) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .no-generatedcontent &,
+  .lt-ie10 & {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.gradient-rtl {
+  background: linear-gradient(top left, #fff, #f4f4f4);
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(top left, #fff, #ccc);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @include breakpoint(medium) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &.pad-b--0 {
+      padding-bottom: 0;
+    }
+  }
+
+  .no-generatedcontent &,
+  .lt-ie10 & {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.gradient-border-rtl {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(top left, #fff, #ccc);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @include breakpoint(medium) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .no-generatedcontent &,
+  .lt-ie10 & {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.no-border {
+  &:after {
+    display: none;
+  }
+}
+
+.bg-taxonomy {
+  background-image: url(../img/structure/bg-taxonomy.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+}
+
+.bg-circles {
+  background-image: url(../img/structure/bg-circles.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include breakpoint(small) {
+    background-image: none;
+  }
+}
+
+/**** **** **** **** ****
+  Text
+**** **** **** **** ****/
+
+.text-red {
+  color: $red;
+}
+
+.text-purple {
+  color: $purple;
+}
+
+.text-yellow {
+  color: #fcffb5;
+}
+
+.text-gray {
+  color: #666;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-light-gray {
+  color: #b2b2b2;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.border-bottom-narrow {
+  &:after {
+    content: " ";
+    display: block;
+    margin: 10px auto;
+    height: 3px;
+    background-color: $blue;
+    width: 40px;
+  }
+}
+
+.bg-border-top {
+  position: relative;
+  &:after {
+    content: " ";
+    display: block;
+    background: url(../img/structure/bg-callout-border.png) repeat-x center center;
+    width: 100%;
+    height: 29px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 2;
+  }
+}
+
+/**** **** **** **** ****
+  Lists
+**** **** **** **** ****/
+
+.list-spacing {
+  li {
+    margin: 0 15px;
+  }
+
+  @include breakpoint(large) {
+    li {
+      margin: 0 12px;
+    }
+  }
+  @include breakpoint(medium) {
+    li {
+      margin: 0 5px;
+    }
+  }
+  @include breakpoint(small) {
+    li {
+      margin: 0 5px;
+    }
+  }
+}
+
+.list-spacing-left {
+  li {
+    margin-left: 15px;
+  }
+
+  @include breakpoint(large) {
+    li {
+      margin-left: 12px;
+    }
+  }
+  @include breakpoint(medium) {
+    li {
+      margin-left: 5px;
+    }
+  }
+  @include breakpoint(small) {
+    li {
+      margin-left: 5px;
+    }
+  }
+}
+
+.list-spacing-right {
+  li {
+    margin-right: 15px;
+  }
+
+  @include breakpoint(large) {
+    li {
+      margin-right: 12px;
+    }
+  }
+  @include breakpoint(medium) {
+    li {
+      margin-right: 5px;
+    }
+  }
+  @include breakpoint(small) {
+    li {
+      margin-right: 5px;
+    }
+  }
+}
+
+.list-spacing-v {
+  li {
+    margin-bottom: 10px;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
+
+.list-inline {
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+
+  @include breakpoint(small) {
+    &.list-mobile-full {
+      li {
+        display: block;
+        width: 100%;
+        margin: 0 0 5px;
+      }
+    }
+  }
+}
+
+.list-two-column {
+  li {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding: 0 15px 10px;
+    &:nth-child(odd) {
+      margin-right: 1%;
+    }
+  }
+}
+
+.list-three-column {
+  li {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    padding: 0 20px 10px;
+  }
+
+  @include breakpoint(medium) {
+    li {
+      width: 32.8%;
+    }
+  }
+  @include breakpoint(small) {
+    li {
+      width: 100%;
+    }
+  }
+}
+
+.list-logos {
+  text-align: center;
+  li {
+    display: inline-block;
+    width: 19%;
+  }
+
+  @include breakpoint(medium) {
+    img {
+      max-width: 72%;
+    }
+  }
+
+  @include breakpoint(small) {
+    li {
+      width: 31%;
+      padding: 0 4px;
+      &:first-of-type {
+        margin-bottom: 15px;
+      }
+    }
+    img {
+      max-width: 85%;
+    }
+  }
+
+}
+
+.list-square {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.list-circle {
+  counter-reset: count;
+  li {
+    padding-left: 60px;
+    position: relative;
+    margin: 0 0 25px;
+    &:last-of-type {
+      margin: 0;
+    }
+    &:before {
+      content: counter(count);
+      counter-increment: count;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 20px;
+      text-align: center;
+      padding: 6px 0 0 0;
+      color: #fff;
+      background: $red;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+    }
+  }
+}
+
+.list-highlight {
+  counter-reset: count;
+  li {
+    padding-left: 60px;
+    position: relative;
+    margin: 0 0 25px;
+    &:last-of-type {
+      margin: 0;
+    }
+    &:before {
+      content: counter(count);
+      counter-increment: count;
+      position: absolute;
+      left: 15px;
+      top: -20px;
+      font-size: 50px;
+      text-align: center;
+      color: #d9d9d9;
+    }
+  }
+
+  @include breakpoint(medium) {
+    li {
+      padding-left: 55px;
+      &:before {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+/**** **** **** **** ****
+  Centering
+**** **** **** **** ****/
+
+.v-align {
+  display: table;
+  .inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.flex-v-align {
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+/**** **** **** **** ****
+  Floats/Order
+**** **** **** **** ****/
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.order-1 {
+  @include order(1);
+  .lt-ie10 & {
+    float: left;
+    @include breakpoint(small) {
+      float: none;
+    }
+  }
+}
+
+.order-2 {
+  @include order(2);
+  .lt-ie10 & {
+    float: right;
+    @include breakpoint(small) {
+      float: none;
+    }
+  }
+}
+
+/**** **** **** **** ****
+  Hide
+**** **** **** **** ****/
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.tablet-hide {
+  @include breakpoint(medium) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+.mobile-hide {
+  @include breakpoint(small) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+/**** **** **** **** ****
+  Utilites
+**** **** **** **** ****/
+
+.relative {
+  position: relative;
+}
+
+.break {
+  display: block;
+
+  @include breakpoint(large) {
+    display: inline;
+  }
+  @include breakpoint(medium) {
+    display: inline;
+  }
+  @include breakpoint(small) {
+    display: inline;
+  }
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.pull-up {
+  position: relative;
+  margin-top: -110px;
+  @include breakpoint(small) {
+    margin-top: 0;
+  }
+}
+
+.on-top {
+  position: relative;
+  z-index: 2;
+}
+
+.block {
+  display: block;
+}
+
+.full-height {
+  min-height: 100%;
+  height: 100%;
+}

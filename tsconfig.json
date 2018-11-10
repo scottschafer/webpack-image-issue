@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "target": "ES5",
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "typeRoots": ["node_modules/@types/"],
+    "rootDirs": [
+      "./src/app/"
+    ],
+    "types": [
+      "node",
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@src/*": ["src/*"]
+    }
+  },
+  "compileOnSave": false,
+  "filesGlob": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "!bower_components/**",
+    "!node_modules/**"
+  ]
+}

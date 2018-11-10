@@ -1,0 +1,160 @@
+/* ==========================================================================
+  Buttons
+========================================================================== */
+
+button:focus {
+  outline: 0;
+}
+
+.btn {
+  background: $blue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px 6px;
+  min-width: 100px;
+  font-size: .8rem;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  width: 130px;
+  // @include medium-font();
+  border-radius: 2px;
+  transition: all .23s ease-in-out 0s;
+  &:hover,
+  &:focus {
+    background: lighten($blue, 15%);
+    color: #fff;
+    border: none;
+  }
+  &:focus,
+  &:active {
+    outline: 0;
+    border: none;
+  }
+
+  @include breakpoint(small) {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+.btn-small {
+  min-width: 50px;
+  padding: 8px 18px 6px;
+  border: none;
+  width: 100px;
+  margin: 0;
+  background: $blue;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: white;
+  border-radius: 4px;
+  transition: all .23s ease-in-out 0s;
+  &:hover,
+  &:focus {
+    background: lighten($blue, 15%);
+    color: #fff;
+    border: none;
+  }
+  &:focus,
+  &:active {
+    outline: 0;
+    border: none;
+  }
+}
+
+.btn-purple {
+  background: $purple;
+  &:hover,
+  &:focus {
+    background: lighten($purple, 8%);
+  }
+}
+
+.btn-green {
+  background: $green;
+  border-radius: 4px;
+  transition: all .23s ease-in-out 0s;
+  &:hover,
+  &:focus {
+    background: lighten($green, 10%);
+  }
+}
+
+.btn-blue {
+  background: $blue;
+  border-radius: 4px;
+  transition: all .23s ease-in-out 0s;
+  &:hover,
+  &:focus {
+    background: lighten($blue, 15%);
+  }
+}
+
+.btn-red {
+  background: $red;
+  border-radius: 4px;
+  transition: all .23s ease-in-out 0s;
+  &:hover,
+  &:focus {
+    background: lighten($red, 15%);
+  }
+}
+
+.btn-grey {
+  background: $grey;
+  border-radius: 4px;
+  transition: all .23s ease-in-out 0s;
+  &:hover,
+  &:focus {
+    background: lighten($grey, 15%);
+  }
+}
+
+.btn-large {
+  font-size: 15px;
+  padding: 11px 30px 9px;
+  min-width: 156px;
+}
+
+.btn-cancel {
+  &:before {
+    content: 'x';
+    text-align: left;
+    margin-right: .3rem;
+    font-weight: bold;
+  }
+}
+
+.btn-x-large {
+  font-size: 16px;
+  min-width: 230px;
+  font-weight: bold;
+  padding: 13px 30px 11px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}

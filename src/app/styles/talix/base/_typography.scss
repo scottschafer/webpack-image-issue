@@ -1,0 +1,39 @@
+html {
+  font-size: 100.01%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: sans-serif;
+  @include breakpoint(small) {
+    font-size: 13px;
+  }
+}
+
+body {
+  font-family: $brand-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.43;
+  color: $grey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $brand-font;
+  margin: 0 0 10px;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  line-height: inherit;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+// Links
+a {
+  text-decoration: none;
+}

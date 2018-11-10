@@ -1,0 +1,470 @@
+/***
+ * Include LESS files here that are common between the legacy build and the pure angular build.
+ ***/
+
+@import "../talixStyleGuide/less/style";
+@import "nav";
+@import "flx";
+@import "../../home/analytics/analytics";
+@import "../../home/reports/reports";
+@import "../../home/settings/settings";
+@import "../../home/settings/admin/multipleUserSettings";
+@import "../../home/patients/details/patient-details";
+@import "../../directives/vertical-slider";
+@import "../../directives/pushMenu";
+@import "../../directives/dosTreeList";
+@import "../../home/patients/details/coding/directives/uncoded-opportunities-list";
+@import "../../home/patients/details/coding/directives/uncoded-opportunities-grid";
+@import "../../home/patients/details/coding/directives/opportunities-grid";
+@import "../../home/patients/details/coding/directives/coded-opportunities-list";
+@import "../../home/patients/details/coding/directives/opportunities-column";
+@import "../../home/patients/details/coding/coding";
+@import "../../home/patients/details/summary/summary";
+@import "../../home/patients/details/coding/directives/evidence-document";
+@import "../../home/patients/details/coding/chart/chart";
+@import "../../home/patients/details/coding/chart/chart-with-claims";
+@import "../../home/patients/details/coding/encounter/encounter";
+@import "../../home/patients/details/coding/opportunity/opportunity";
+@import "../../home/worklists/worklists";
+@import "../../home/worklists/templates/columns";
+@import "../../home/patients/list/list";
+@import "../../home/search/search";
+
+@font-face {
+  font-family: 'ui-grid-font';
+  src: url('/assets/fonts/ui-grid.eot');
+  src: url('/assets/fonts/ui-grid.eot#iefix') format('embedded-opentype'), url('/assets/fonts/ui-grid.woff') format('woff'), url('/assets/fonts/ui-grid.ttf') format('truetype'), url('/assets/fonts/ui-grid.svg?#ui-grid') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.disable-all {
+  cursor: not-allowed!important;
+  pointer-events: none!important;
+  * {
+    cursor:not-allowed!important;
+    pointer-events: none!important;
+   }
+ }
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.display-none {
+  display: none;
+}
+
+.ui-grid-icon-up-dir, .ui-grid-icon-down-dir {
+  font-family: "ui-grid-font" !important;
+}
+
+.tlx {
+  input[type=text]::-ms-clear { //for clearing the 'x' in IE input box
+    display: none;
+  }
+
+  .big-centered-wait-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -64px;
+    margin-top: -64px;
+    width: 128px;
+    height: 128px;
+    display: none;
+    z-index: 1000;
+  }
+
+  .wait-shield {
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -64px;
+      margin-top: -64px;
+      width: 128px;
+      height: 128px;
+      z-index: 1000;
+    }
+
+    .fa-spin {
+      position: relative;
+      font-size: 48px;
+      top: 50%;
+      left: 50%;
+      margin-left: -24px;
+      margin-top: -24px;
+    }
+  }
+
+  .chart-wait-shield {
+    .wait-shield;
+  }
+
+  .btn-green {
+    background-color: #62a70f;
+    border-color: #62a70f;
+    color: white;
+  }
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .tab-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  #eVIEW-home, #eVIEW-menu, #eVIEW-search, #eVIEW-analytics, #eVIEW-reports, #eVIEW-settings, #eVIEW-info {
+
+    >.ngContainer {
+      >.ng-scope {
+        >.container-fluid {
+          >.tab-contents {
+            border: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  .input-xs {
+    height: 24px;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 1.5; //If Placeholder of the input is moved up, rem/modify this.
+    border-radius: 3px;
+    margin: 0;
+  }
+
+  body {
+    // padding: 4px;
+
+    .container-fluid {
+      .tab-contents {
+        min-height: 200px;
+        height: 100%;
+      }
+    }
+  }
+
+  .same-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .ui-select-container {
+    .btn {
+      color: #333;
+      background-color: #fff;
+      border-color: black;
+      padding: 6px 12px 6px 12px;
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+    &:hover,
+    &:focus {
+      background-color: #e6e6e6;
+      border-color: #adadad;
+      color: #333;
+    }
+  }
+
+  .nav-container {
+    padding-top: 10px;
+  }
+
+  .nav-tabs {
+    border-bottom: transparent;
+    & > li {
+      margin-bottom: -2px;
+      & > a {
+        border: 1px solid lightgray;
+      }
+    }
+  }
+
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: white;
+    border-left: 2px solid #62a70f;
+    border-right: 2px solid #62a70f;
+    border-top: 2px solid #62a70f;
+    border-bottom: 0px solid transparent;
+  }
+
+  .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+  }
+  .tab-contents {
+    border: 2px solid #62a70f;
+    /*margin-top: -10px; */
+    z-index: -1;
+  }
+
+  .ui-grid-sort-priority-number {
+    display: none;
+  }
+
+  .heading-bottom-line {
+    border-bottom: 1px solid #62a70f;
+    margin-bottom: 10px;
+  }
+
+  .st-loader {
+    width: 10em;
+    height: 2.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 1.25em 0 5em;
+    box-sizing: border-box;
+    z-index: 999;
+
+  }
+
+  .st-loader:before,
+  .st-loader:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1.25em;
+    box-sizing: border-box;
+    border: 0.25em solid #62a70f;
+  }
+
+  .st-loader:before {
+    left: -0.76923em;
+    border-right: 0;
+  }
+
+  .st-loader:after {
+    right: -0.76923em;
+    border-left: 0;
+  }
+
+  .st-loader .equal {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.75em;
+    left: 4.16667em;
+    height: 1em;
+    width: 1.66667em;
+    border: 0.75em solid #62a70f;
+    box-sizing: border-box;
+    -moz-animation: loading 1.5s infinite ease-in-out;
+    -webkit-animation: loading 1.5s infinite ease-in-out;
+    animation: loading 1.5s infinite ease-in-out;
+    background: #62a70f;
+  }
+
+  .st-sort-ascent:before {
+    content: '\25B2';
+  }
+
+  .st-sort-descent:before {
+    content: '\25BC';
+  }
+
+  .st-selected {
+    background: #aaa !important;
+    color: white !important;
+  }
+
+  .st-selected:hover {
+    background: #bbb !important;
+  }
+
+  .select-page {
+    width: 50px;
+    text-align: center;
+  }
+  .pagination li a input {
+    padding: 0;
+    margin: -5px 0;
+  }
+
+  .pagination li a input {
+    padding: 0;
+    margin: -5px 0;
+  }
+  .as-sortable-item, .as-sortable-placeholder {
+    min-height: 20px;
+    margin: 1px 2px 5px 1px;
+    padding: 5px;
+    border-radius: 1px;
+  }
+  .as-sortable-item {
+    border: solid 1px darkgrey;
+    background-color: #ffffff;
+  }
+  .as-sortable-drag {
+    opacity: .9;
+  }
+
+  .ui-select-multiple input.ui-select-search {
+    width: 100% !important;
+  }
+  .btn-no-padding {
+    padding: 0;
+  }
+  .clickable-span span, a {
+    cursor: pointer;
+  }
+
+  .header {
+    .top-header-bar {
+      height: 10px;
+      background: #62a70f;
+      margin-bottom: 10px;
+    }
+    .logo {
+      display: inline-block;
+      background-image: url(/assets/images/talix_application_coding_insight_new.png);
+      width: 180px;
+      height: 44px;
+      background-repeat: no-repeat;
+    }
+    .plan-year-select {
+      display: inline-block;
+      position: fixed;
+      right: 280px;
+      margin-top: 8px;
+
+      label {
+        display: inline;
+      }
+    }
+    .vertical-divider {
+      display: inline-block;
+      border-right: 1px solid #ccc;
+      width: 2px;
+      height: 35px;
+      margin-right: 20px;
+      vertical-align: top;
+    }
+    .vertical-divider-right {
+      position: absolute;
+      right: 150px;
+    }
+    .logout-link {
+      position: fixed;
+      display: inline-block;
+      right: 200px;
+      font-size: 1.2em;
+      padding-top: 5px;
+
+    }
+    tabs {
+      display: inline-block;
+      vertical-align: top;
+
+      .nav {
+        > li > a {
+          font-size: 1.2em;
+          color: #333;
+          background-color: transparent;
+
+          &:active, &:hover {
+            background-color: transparent;
+          }
+        }
+
+        .active {
+          border-bottom: 2px solid #62a70f;
+          font-weight: bold;
+        }
+      }
+    }
+    .logo-client {
+      position: absolute;
+      right: 5px;
+      top: 20px;
+      background-image: url(/assets/images/talix-logos_large.png);
+      background-size: contain;
+      width: 120px;
+      height: 30px;
+      background-repeat: no-repeat;
+    }
+    .logovfp {
+      background-image: url(/assets/images/customer-small40.png);
+      width: 150px;
+    }
+  }
+
+  .home-tab-contents {
+    border: none;
+    border-top: 2px solid #ccc;
+  }
+
+  .global-error-msg {
+    .modal-content {
+      padding: 20px !important;
+    }
+
+    .failure-additional-info {
+    	background-color: #f8f8c0;
+		-webkit-box-shadow: 2px 2px 10px 0px rgba(192,192,192,1);
+		-moz-box-shadow: 2px 2px 10px 0px rgba(192,192,192,1);
+		box-shadow: 2px 2px 10px 0px rgba(192,192,192,1);
+		padding: 8px;
+	    margin: 8px;
+	    border: rgba(0,0,0,.2) 1px solid;
+
+		.failure-title {
+			font-size: 75%;
+			font-weight: 600;
+		}
+	}
+  }
+
+  .inherit-height {
+    height: inherit;
+  }
+
+  .full-height {
+    min-height: 100%;
+    height: 100%;
+  }
+  
+  .cover {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+
+  .hl-readmit-menu-logoright {
+    background-image: url(/assets/images/talix-logos_large.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
